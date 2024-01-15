@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESU spēle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>DESU spēle</h1>
+    <div class="score">
+        <p>Punkti X: <span id="punktiX">0</span> | Punkti O: <span id="punktiO">0</span> <p> | </p> <button id="restartScoreButton">Atiestatīt</button></p>
+    </div>
+    <div class="timer">
+        <p>Laiks: <span id="timer">0:00</span></p>
+    </div>
+    <p>Spēlētāja <span class="display"></span> gājiens</p>
+    <div class="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    <div class="resault" id="resaultBox">
+        <div class="resaultInfo"></div>
+        <button id="restartButton">Spēlēt vēlreiz</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+</body>
+</html>

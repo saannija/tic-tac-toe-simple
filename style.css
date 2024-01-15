@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS';
+    margin: 0;
+}
+
+body{
+    background:  #1a252c;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 4rem;
+}
+
+p{
+    color: #fff;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.board{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.cell{
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/*----------------*/
+.circle:before{
+    content: 'O';
+}
+
+.circle{
+    color: #498AFB;
+}
+
+.x:before{
+    content: 'X';
+}
+
+.x{
+    color: #09C372;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.score p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.score span {
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.score button{
+    background: #fff;
+    border: 1px solid #000;
+    font-size: 1.5rem;
+    padding: .4rem .6rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.resault{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 26, 44, 0.98);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.resault button{
+    background: #fff;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: .4rem 1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.resault button:hover, .score button:hover{
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+.resault.show{
+    display: flex;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    display: none;
+}
+
+.winning-cell {
+    background-color: rgb(153, 20, 20);
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.timer span {
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
